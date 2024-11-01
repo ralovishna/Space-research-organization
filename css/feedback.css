@@ -1,56 +1,83 @@
 /*style.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color: #070a2be6;
-    font-family: 'Times New Roman', Times, serif;
-    height: 60px;
-    margin: 0%;
+  background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);font-family: 'Times New Roman', Times, serif;
+  height: 70px;
+  margin-top: 10px;  
+  width: 100%;
 }
 #first_col_nav {
-    width: 700px;
-    padding-left: 14px;
-    color: aliceblue;
-    font-size: 30px;
+  width: 600px;
+  padding-left: 15px;
+  color: aliceblue;
+  font-size: 30px;
+  background: linear-gradient(40deg, #ffffff, #9df0fb, #2ECC70);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; 
+  margin: 0;
+  /* height: 100vh;
+  width: 100vw; */
 }
+
+body {
+  margin: 0;
+  flex-direction: column; 
+  background-image: -webkit-image-set("../images/index/feedback2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 0;
+}
+
 
 /* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+a {
+  background: linear-gradient(35deg, #ffffff, #9df0fb, #2ECC70);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; 
+  float: left;
+  font-size: 27px;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    background-image: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  font-size: 27px;
+  font-weight: 500;
+  background-color: inherit;
+  background-image: inherit;
+  font-family: inherit; 
+  margin: 0; 
+  background: linear-gradient(35deg, #ffffff, #9df0fb, #2ECC70);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; 
 }
 
-/* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
 background-color: #07075b;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
 display: none;
 position: absolute;
@@ -58,10 +85,9 @@ background-image: inherit;
 color: aliceblue;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-/* z-index: 1; */
+z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
 float: none;
 color: white;
@@ -71,96 +97,92 @@ display: block;
 text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-background-color: #ddd;
-color: #07075b;
-font-style: oblique;
-font-weight: bolder;
-}
+  background-color: #ddd;
+  color: #07075b;
+  font-style: oblique;
+  font-weight: bolder;
+  }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
 display: block;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column; 
-    /* height: 100vh; */
-    background-image: url(../images/index/feedback2.png);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 0;
-  }
-  .container {
-    width: 50%;
-    margin: 40px auto;
-    padding: 20px;
-    
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    text-align: center;
-    font-size: 50px;
-    /* color: #333; */
-    background: linear-gradient(135deg, #e7e9ea, #6ddbf3);
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-  }
-  form {
-    margin-top: 20px;
-  }
-  label {
-    font-size: 24px;
-    color: #333;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 12px;    
-  }
-  span {
-    background: linear-gradient(135deg, #e7e9ea, #6ddbf3);
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-   
-  }
-  input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background: radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 21px;
-  }
-  input[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    background: transparent;
-    border: none;
-    color:snow;
-    font-size: 35px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-input[type="submit"]:hover {
-    background: radial-gradient(circle at 7.4% 45.1%, rgb(236, 206, 251) 0%, rgb(205, 237, 246) 45.1%, rgb(227, 251, 252) 78.4%, rgb(230, 247, 235) 90%);
-    color: #070a2be6;
+strong {
+  background: linear-gradient(35deg, #ffffff, #9df0fb, #2ECC70);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; 
 }
 
+
+.container {
+  width: 50%;
+  margin: 40px auto;
+  padding: 40px;
+  border: 3px solid snow;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  /* color: #333; */
+  background: linear-gradient(135deg, #e7e9ea, #6ddbf3);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+form {
+  margin-top: 20px;
+}
+label {
+  font-size: 26px;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;    
+}
+span {
+  background: linear-gradient(135deg, #e7e9ea, #6ddbf3);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+input, select, textarea {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 30px;
+  background: radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 21px;
+}
+input[type="submit"] {
+  width: 98%;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  color:snow;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+input[type="submit"]:hover {
+  background: radial-gradient(circle at 7.4% 45.1%, rgb(236, 206, 251) 0%, rgb(205, 237, 246) 45.1%, rgb(227, 251, 252) 78.4%, rgb(230, 247, 235) 90%);
+  color: #070a2be6;
+}
+
+
 footer {
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: 10px;
-    background-color: #070a2be6;;
-    color: white;
-    position:-webkit-sticky
-    
-  }
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 25px;
+  background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(0, 143, 213) 93.4%);
+  color: white;
+  width: 97.3%;
+  height: 40px;
+  position:-webkit-sticky;
+}

@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-  <header style="margin-top: 20px;">
-    <nav id="navbar" >
+  <header">
+    <nav id="navbar">
         <div class="navbar">
             <table>
                 <tr>
@@ -24,37 +24,44 @@
                         <a href="contact.html">Contact</a>
                         <a href="careers.html">Careers</a>
                         <div class="dropdown">
-                            <button class="dropbtn">About</button>
+                        <button class="dropbtn">About
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="history.html">History</a>
+                            <a href="scientists.html">Scientists</a>
+                            <a href="achievements.html">Achievements</a>
+                        </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects
+                            <i class="fa fa-caret-down"></i>
+                            </button>
                             <div class="dropdown-content">
-                                <a href="about.html">History</a>
-                                <a href="scientists.html">Scientists</a>
-                                <a href="achievements.html">Achievements</a>
+                            <a href="ongoingProjects.html">Ongoing Projects</a>
+                            <a href="futureGoals.html">Future Goals</a>
+                            <a href="researchAreas.html">Research Areas</a>
                             </div>
                         </div>
 
                         <div class="dropdown">
-                            <button class="dropbtn">Projects</button>
+                            <button class="dropbtn">News
+                            <i class="fa fa-caret-down"></i>
+                            </button>
                             <div class="dropdown-content">
-                                <a href="projects.html">Ongoing Projects</a>
-                                <a href="goals.html">Future Goals</a>
-                                <a href="research.html">Research Areas</a>
+                            <a href="LatestNews.html">Latest News</a>
+                            <a href="blog.html">Blog</a>
                             </div>
                         </div>
 
-                        <div class="dropdown">
-                            <button class="dropbtn">News</button>
-                            <div class="dropdown-content">
-                                <a href="news.html">Latest News</a>
-                                <a href="blog.html">Blog</a>
-                            </div>
-                        </div>
                         <a href="feedback.html">Feedback</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </nav>
-</header>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </nav>
+  </header>
   <div class="container">
     <h1>Contact Us</h1>
     <p>We're here to help! Feel free to get in touch with us for any queries or information.</p>
@@ -79,23 +86,23 @@
       <h1>Appointment Registration</h1>
       <form action="#" method="POST">
         <!-- Visitor Information -->
-        <label for="name">Full Name</label>
+        <label for="name"><span>Full Name</span></label>
         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
   
-        <label for="email">Email</label>
+        <label for="email"><span>Email</span></label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
   
-        <label for="phone">Phone Number</label>
+        <label for="phone"><span>Phone Number</span></label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
   
         <!-- Appointment Details -->
-        <label for="date">Appointment Date</label>
+        <label for="date"><span>Appointment Date</span></label>
         <input type="date" id="date" name="date" required>
   
-        <label for="time">Preferred Time</label>
+        <label for="time"><span>Preferred Time</span></label>
         <input type="time" id="time" name="time" required>
   
-        <label for="purpose">Purpose of Visit</label>
+        <label for="purpose"><span>Purpose of Visit</span></label>
         <textarea id="purpose" name="purpose" placeholder="Describe the purpose of your visit" rows="4" required></textarea>
   
         <!-- Submit Button -->
@@ -103,9 +110,8 @@
       </form>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Space Research Organization. All Rights Reserved.</p>
+    <strong>&copy; 2024 Space Research Organization. All Rights Reserved.</strong>
   </footer>
 
 </body>
