@@ -9,7 +9,6 @@
         <title>Responsive Form Card</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="../css/feedback.css">
-        <!-- <link rel="stylesheet" href="../css/index.css"> -->
     </head>
     <body>
         <header>
@@ -33,7 +32,7 @@
                                 <div class="dropdown-content">
                                     <a href="history.html">History</a>
                                     <a href="scientists.html">Scientists</a>
-                                    <a href="achievements.html">Achievements</a>
+                                    <a href="contribution.html">Contributions</a>
                                 </div>
                                 </div>
 
@@ -64,15 +63,13 @@
 
         <div class="container">
             <h1>Feedback Form</h1>
-            <form action="#" method="POST">
-                <!-- User Information -->
+            <form id="feedbackForm">
                 <label for="name"><span>Full Name</span></label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
             
                 <label for="email"><span>Email</span></label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             
-                <!-- Feedback Details -->
                 <label for="rating"><span>Rating</span></label>
                 <select id="rating" name="rating" required>
                     <option value="">Choose a rating</option>
@@ -81,18 +78,27 @@
                     <option value="average">Average</option>
                     <option value="poor">Poor</option>
                 </select>
-            
+        
                 <label for="feedback"><span>Feedback</span></label>
                 <textarea id="feedback" name="feedback" placeholder="Write your feedback here" rows="4" required></textarea>
-            
-                <!-- Submit Button -->
+
                 <input type="submit" value="Submit Feedback">
             </form>
+        </div>
+
+        <div class="dBox" id="dBox">
+            <div class="dCont">
+                <h2 id="dTitle">Feedback Submitted!</h2>
+                <p id="dMessage">Thank you for your feedback!</p>
+                <button onclick="closeDBox()">Fine</button>
+            </div>
         </div>
 
         <footer>
             <strong>&copy; 2024 Space Research Organization. All Rights Reserved.</strong>
         </footer>
+
+        <script src="/js/feedback.js"></script>
     </body>
 
 </html>

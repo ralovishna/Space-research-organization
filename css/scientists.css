@@ -1,8 +1,17 @@
 .navbar {
     background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);font-family: 'Times New Roman', Times, serif;
-    height: 70px;
-    margin-top: 10px;
-    width: 1530px;
+    height: 80px;
+    margin-bottom: 60px;   
+    padding: 0; 
+    width: 1514px;
+}
+header{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+}
+td {
+    vertical-align: top;
 }
 #first_col_nav {
     width: 600px;
@@ -17,10 +26,11 @@
 }
 
 body {
-    background-image: url(/images/index/temp2.jpg);
+    background-image: url(/images/index/history.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 96vh; /* Set height to 100% of the viewport height */
+    background-attachment: fixed;
+    height: 96vh;
     width: 97vw; /* Set width to 100% of the viewport width */
     margin: 0; /* Remove default margin */
 }
@@ -106,12 +116,79 @@ footer {
     font-size: 25px;
     background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(0, 143, 213) 93.4%);
     color: white;
-    width: 100%;
+    width: 1479px;
     height: 40px;
     position:-webkit-sticky;
 }
 
-strong {
+#title {
+    background: linear-gradient(to top, #b9dafc 0%, rgb(225, 250, 148) 100%);
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 150px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; 
+} 
+
+.divs {
+    width: 1350px;
+    margin: 60px;
+    background: linear-gradient(-20deg, rgb(233, 222, 250) 0%, rgb(251, 252, 219) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.div1 {
+    display: flex;   
+    justify-self: center;
+    justify-content: space-around;
+    max-width: 1250px;
+    margin-top: 30px;
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pics {
+    width: 100%;
+    max-height: max-content;
+    max-width: 400px;
+    display: block;
+    margin: 40px;
+    border-radius: 8px;
+    display: table-column-group;
+}
+h1 {
+    background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; 
+    text-align: center;
+}
+p {  
+    background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; 
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:medium;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+em{
+    font-size: larger;
+}
+
+#foot {
     background: linear-gradient(35deg, #ffffff, #9df0fb, #2ECC70);
     -webkit-background-clip: text;
     background-clip: text;

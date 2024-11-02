@@ -1,10 +1,14 @@
 .navbar {
     background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);font-family: 'Times New Roman', Times, serif;
-    height: 70px;
-    margin-top: 10px;
+    height: 80px;
     margin-bottom: 60px;   
     padding: 0; 
     width: 1514px;
+}
+header{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
 }
 td {
     vertical-align: top;
@@ -122,6 +126,7 @@ footer {
     -webkit-background-clip: text;
     text-align: center;
     font-size: 55px;
+    margin-top: 150px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent; 
@@ -130,7 +135,8 @@ footer {
 .divs {
     width: 1350px;
     margin: 60px;
-    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);padding: 20px;
+    background: linear-gradient(-20deg, rgb(233, 222, 250) 0%, rgb(251, 252, 219) 100%);
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -143,7 +149,7 @@ footer {
     max-width: 1250px;
     margin-top: 30px;
     background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -171,10 +177,12 @@ p {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent; 
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-size:medium;
     font-weight: 600;
     line-height: 1.6;
+    padding: 20px;
 }
 
 #foot {
